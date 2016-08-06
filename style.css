@@ -25,6 +25,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 ----------------------------------------------------------------
 # Normalize
 # Typography
+# Layout
 # Elements
 # Forms
 # Navigation
@@ -498,6 +499,15 @@ textarea:focus {
 
 textarea {
 	width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Layout
+--------------------------------------------------------------*/
+
+#content {
+	background: url("light.jpg") 50%;;
+	background-repeat; no-repeat;
 }
 
 /*--------------------------------------------------------------
