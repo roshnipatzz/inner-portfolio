@@ -520,6 +520,16 @@ textarea {
 	float: left;
 }
 
+#secondary {
+	background: url("sm-reader.jpg") 50%;
+	margin: 20px 0px 20px 80px;;
+	width: 300px;
+	padding: 5px;
+	border: 0.8em #6f5e56 double;
+	color: #fff;
+	float: left;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
