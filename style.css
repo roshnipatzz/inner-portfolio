@@ -25,8 +25,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 ----------------------------------------------------------------
 # Normalize
 # Typography
-# Layout
 # Elements
+# Layout
+	## Master Header
+	## Colophon
 # Forms
 # Navigation
 	## Links
@@ -413,6 +415,42 @@ table {
 }
 
 /*--------------------------------------------------------------
+## Layout
+--------------------------------------------------------------*/
+
+#content {
+	background: url("light.jpg") 50%;;
+	background-repeat; no-repeat;
+}
+
+#primary {
+	background: rgba(0,0,0,0.3);
+	width: 900px;
+	margin: 20px 80px 10px 50px;
+	padding: 10px;
+	border: 0.8em #6f5e56 double; 
+	color: #fff;
+	float: left;
+}
+
+#secondary {
+	background: url("sm-reader.jpg") 50%;
+	margin: 20px 0px 20px 80px;;
+	width: 300px;
+	padding: 5px;
+	border: 0.8em #6f5e56 double;
+	color: #fff;
+	float: left;
+}
+
+/*--------------------------------------------------------------
+## Master Header
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Colophon
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
 button,
@@ -499,35 +537,6 @@ textarea:focus {
 
 textarea {
 	width: 100%;
-}
-
-/*--------------------------------------------------------------
-## Layout
---------------------------------------------------------------*/
-
-#content {
-	background: url("light.jpg") 50%;;
-	background-repeat; no-repeat;
-}
-
-#primary {
-	background: rgba(0,0,0,0.3);
-	width: 900px;
-	margin: 20px 80px 10px 50px;
-	padding: 10px;
-	border: 0.8em #6f5e56 double; 
-	color: #fff;
-	float: left;
-}
-
-#secondary {
-	background: url("sm-reader.jpg") 50%;
-	margin: 20px 0px 20px 80px;;
-	width: 300px;
-	padding: 5px;
-	border: 0.8em #6f5e56 double;
-	color: #fff;
-	float: left;
 }
 
 /*--------------------------------------------------------------
