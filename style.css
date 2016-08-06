@@ -510,6 +510,16 @@ textarea {
 	background-repeat; no-repeat;
 }
 
+#primary {
+	background: rgba(0,0,0,0.3);
+	width: 900px;
+	margin: 20px 80px 10px 50px;
+	padding: 10px;
+	border: 0.8em #6f5e56 double; 
+	color: #fff;
+	float: left;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
