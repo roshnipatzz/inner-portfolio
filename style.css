@@ -28,7 +28,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Layout
 	## Master Header
-	## Colophon
+	## Footer
 # Forms
 # Navigation
 	## Links
@@ -451,9 +451,11 @@ table {
 	text-align: center;
 }
 /*--------------------------------------------------------------
-## Colophon
+## Footer
 --------------------------------------------------------------*/
-
+#colophon {
+	background: url("banner.jpg") 50%;
+}
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
