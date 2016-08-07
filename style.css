@@ -484,6 +484,10 @@ table {
 --------------------------------------------------------------*/
 #colophon {
 	background: url("banner.jpg") 50%;
+	border-top: 0.3em solid #000;
+	font-size: 1em;
+	text-align: center;
+	width:100%
 }
 /*--------------------------------------------------------------
 # Forms
