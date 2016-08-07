@@ -452,10 +452,31 @@ table {
 }
 
 /*--------------------------------------------------------------
-## Master Header
+## Header
 --------------------------------------------------------------*/
 #masthead {
 	background: url("banner.jpg") 50%;
+	text-align: center;
+}
+
+.site-branding {
+	line-height: 1.5em;
+}
+
+.site-title {
+	font-family: 'Eagle Lake', cursive;
+	text-align: center;
+}
+
+.site-title a {
+	font-size: 6.5em;
+	text-decoration: none;
+}
+
+.site-description {
+	color: #bd8d1b;
+	font-family: 'Fondamento', cursive;
+	font-size: 2em;
 	text-align: center;
 }
 /*--------------------------------------------------------------
