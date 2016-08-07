@@ -460,7 +460,7 @@ table {
 }
 
 .site-branding {
-	line-height: 1.5em;
+	line-height: 1.2em;
 	padding-top: 2em;
 }
 
@@ -612,20 +612,28 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
+	background-color: #000;
+	border: 0.2em solid #000;
 	clear: both;
 	display: block;
 	float: left;
+	padding: 0.2em;
+	position: relative;
+	text-align: center;
 	width: 100%;
 }
 
 .main-navigation ul {
-	display: none;
+	display: inline-block;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
 
 .main-navigation li {
+	border-right: 0.313em solid #000;
+	padding-right: 2em;
+	padding-left: 2em;
 	float: left;
 	position: relative;
 }
