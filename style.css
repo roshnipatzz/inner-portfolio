@@ -421,32 +421,34 @@ table {
 }
 
 /*--------------------------------------------------------------
-## Layout
+# Layout
 --------------------------------------------------------------*/
 
 #content {
-	background: url("light.jpg") 50%;;
 	background-repeat; no-repeat;
+	background: url("light.jpg") 50%;;
 }
 
 #primary {
 	background: rgba(0,0,0,0.3);
-	width: 900px;
-	margin: 20px 80px 10px 50px;
-	padding: 10px;
-	border: 0.8em #6f5e56 double; 
+	border: 0.8em double #6f5e56; 
+	border-top-left-radius: 2em;
+	border-bottom-left-radius: 2em; 
 	color: #fff;
 	float: left;
+	margin: 1.250em 5.000em 0.625em 3.125em;
+	max-width: 940px;
+	padding: 0.625em;
 }
 
 #secondary {
 	background: url("sm-reader.jpg") 50%;
-	margin: 20px 0px 20px 80px;;
-	width: 300px;
-	padding: 5px;
 	border: 0.8em #6f5e56 double;
 	color: #fff;
 	float: left;
+	margin: 1.250em 0em 1.250em 2.8em;
+	max-width: 300px;
+	padding: 0.313em;
 }
 
 /*--------------------------------------------------------------
