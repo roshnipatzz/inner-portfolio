@@ -731,6 +731,30 @@ a:active {
 }
 
 /*--------------------------------------------------------------
+## Sidebar
+--------------------------------------------------------------*/
+.widget-title {
+	border-top: 0.05em solid #6f5e56;
+	border-bottom: 0.05em solid #6f5e56;
+	color: #e0c5be;
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 2.5em;
+}
+
+.page_item {
+	list-style-type: none;
+}
+
+.page_item a{
+	text-decoration: none;
+}
+
+.children{
+	margin: 0em;
+	padding: 0em;
+}
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
