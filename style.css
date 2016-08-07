@@ -461,6 +461,7 @@ table {
 
 .site-branding {
 	line-height: 1.5em;
+	padding-top: 2em;
 }
 
 .site-title {
@@ -469,7 +470,7 @@ table {
 }
 
 .site-title a {
-	font-size: 6.5em;
+	font-size: 6em;
 	text-decoration: none;
 }
 
@@ -585,17 +586,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #e0c5be;
 }
 
 a:visited {
-	color: purple;
+	color: #716b4d;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #868673;
 }
 
 a:focus {
