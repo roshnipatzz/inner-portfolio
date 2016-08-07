@@ -287,12 +287,10 @@ h5,
 h6 {
 	clear: both;
 	text-align: center;
-	font-family:'Patrick Hand SC', cursive;
 }
 
 p {
-	font-size: 16px; 
-	font-family: 'Jim Nightshade', cursive;
+	font-size: 1em; /* 16px / 16px */ 
 	text-align: justify;
 	margin-bottom: 1.5em;
 }
