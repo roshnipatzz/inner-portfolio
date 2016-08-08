@@ -426,7 +426,7 @@ table {
 
 #content {
 	background-repeat; no-repeat;
-	background: url("light.jpg") 50%;;
+	background: url("light.jpg") 50% fixed;
 }
 
 #primary {
@@ -439,6 +439,7 @@ table {
 	margin: 1.250em 5.000em 0.625em 3.125em;
 	max-width: 940px;
 	padding: 0.625em;
+	width: 90%;
 }
 
 #secondary {
@@ -461,7 +462,7 @@ table {
 
 .site-branding {
 	line-height: 1.2em;
-	padding-top: 2em;
+	padding-top: 3em;
 }
 
 .site-title {
@@ -734,6 +735,7 @@ a:active {
 ## Sidebar
 --------------------------------------------------------------*/
 .widget-title {
+	background: rgba(0,0,0,0.3);
 	border-top: 0.05em solid #6f5e56;
 	border-bottom: 0.05em solid #6f5e56;
 	color: #e0c5be;
@@ -741,19 +743,18 @@ a:active {
 	font-size: 2.5em;
 }
 
-.page_item {
+.widget_nav_menu ul {
+	background: rgba(0,0,0,0.3);
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
 }
 
-.page_item a{
+.widget_nav_menu li a {
+	display: block;
 	text-decoration: none;
 }
-
-.children{
-	margin: 0em;
-	padding: 0em;
-}
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -789,6 +790,29 @@ a:active {
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
 	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Media Queries
+--------------------------------------------------------------*/
+@media only screen and (max-width:1020px){
+	#primary,
+	#secondary,
+	#masthead,
+		{
+		float: none;
+		margin: auto;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-device-width:480px){ 
+	#colophon {
+		text-align: left;
+		max-width: none;
+		font-size: 1.25em;
+		float: none;
+	}
 }
 
 /*--------------------------------------------------------------
