@@ -35,7 +35,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Menus
 	## Sidebar
 # Accessibility
-	## Media Queries
+	## Responsive Webpage
 # Alignments
 # Clearings
 # Widgets
@@ -117,7 +117,11 @@ dfn {
 }
 
 h1 {
-	font-size: 2em;
+	border-top: 0.005em solid #6f5e56;
+	border-bottom: 0.005em solid #6f5e56;
+	color: #46242f;
+	font-family: 'Aladin', cursive;
+	font-size: 4em;
 	margin: 0.67em 0;
 }
 
@@ -265,7 +269,7 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Great+Vibes|Bad+Script|Eagle+Lake|Jim+Nightshade|Fondamento|Patrick+Hand+SC|Aladin|Rochester);
+@import url(https://fonts.googleapis.com/css?family=Eagle+Lake|Jim+Nightshade|Fondamento|Patrick+Hand+SC|Bad+Script|Aladin);
 
 body,
 button,
@@ -434,7 +438,9 @@ table {
 	border: 0.8em double #6f5e56; 
 	border-top-left-radius: 2em;
 	border-bottom-left-radius: 2em; 
-	color: #fff;
+	color: #ece1cc;
+	font-family: 'Bad Script';
+	font-size: 1em;
 	float: left;
 	margin: 1.250em 5.000em 0.625em 3.125em;
 	max-width: 940px;
@@ -793,7 +799,7 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-## Media Queries
+## Responsive Webpage
 --------------------------------------------------------------*/
 @media only screen and (max-width:1020px){
 	#primary,
