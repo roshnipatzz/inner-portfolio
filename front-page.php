@@ -25,6 +25,9 @@ get_header(); ?>
     <li data-thumb="slide4-thumb.jpg">
       <img src="<?php echo get_template_directory_uri() ?>slide4.jpg" />
     </li>
+     <li data-thumb="slide5-thumb.jpg">
+      <img src="<?php echo get_template_directory_uri() ?>slide5.jpg" />
+    </li>
   </ul>
 </div>
 
