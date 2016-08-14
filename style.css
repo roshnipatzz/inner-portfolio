@@ -35,7 +35,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Menus
 	## Sidebar
 # Accessibility
-	## Responsive Webpage
 # Alignments
 # Clearings
 # Widgets
@@ -46,6 +45,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Compatibility
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -269,7 +269,6 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Eagle+Lake|Jim+Nightshade|Fondamento|Patrick+Hand+SC|Bad+Script|Aladin);
 
 body,
 button,
@@ -458,6 +457,32 @@ table {
 	padding: 0.313em;
 }
 
+/*Grid Layout */
+#grid-container {
+	background: rgba(68,68,68,0.4);
+	width:100%;
+	text-align: center;
+}
+
+.box {
+	background: rgba(68,68,68,0.8);
+	margin: 0.3125em; /* 5 px / 16px */
+	padding: 0.3125em 0.3125em 0.0625em 0.3125em; /* 5px 5px 1px 5px / 16px */
+	display: inline-block;
+	}
+
+.column1 {
+	float:left;
+	width: 45%;
+	margin: 2.5%; /* 2 px / 16px */
+}
+
+.column2 {
+	float:left;
+	width: 30%;
+	margin: 0.125em; /* 2 px / 16px */
+}
+
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
@@ -618,7 +643,8 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
+
+.menu-top-container {
 	background-color: #000;
 	border: 0.2em solid #000;
 	clear: both;
@@ -796,29 +822,6 @@ a:active {
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
 	outline: 0;
-}
-
-/*--------------------------------------------------------------
-## Responsive Webpage
---------------------------------------------------------------*/
-@media only screen and (max-width:1020px){
-	#primary,
-	#secondary,
-	#masthead,
-		{
-		float: none;
-		margin: auto;
-		width: 100%;
-	}
-}
-
-@media only screen and (max-device-width:480px){ 
-	#colophon {
-		text-align: left;
-		max-width: none;
-		font-size: 1.25em;
-		float: none;
-	}
 }
 
 /*--------------------------------------------------------------
@@ -1034,3 +1037,29 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+Compatibility (Responsive Design)
+--------------------------------------------------------------*/
+/* Main Menu */
+@media screen and (max-width:742px){
+	.menu-toggle {
+		background: url("menu.png");
+		display: block;
+		width: 40px;
+		height: 40px;
+	}
+	
+	.main-navigation.toggled ul {
+		display: block;
+		position: relative;
+		text-align: left;
+	}
+	.main-navigation li {
+		display: block;
+		float: none;
+		border-bottom: 3px double #6f5e56;
+	}
+	
+	
+.class
