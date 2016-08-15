@@ -1,7 +1,7 @@
 <?php
 /** 
  *  
- * Template Name: New Page Template
+ * Template Name: Front Page
  *  
  *
  */
@@ -31,32 +31,6 @@ get_header(); ?>
   </ul>
 </div>
 
-	<div id="grid-container">
-		<?php 
-			$args = array( 
-				'posts_per_page' => 5,			 
-			); ?>
-			
-			<?php $the_query = new WP_Query( $args ); ?>
-			<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-					<div class="column1">
-						<h1><?php the_title(); ?></a></h1>
-						<div class="box">
-						<?php if ( has_post_thumbnail() ) : ?>
-    						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-        						<?php the_post_thumbnail(); ?>
-    						</a> </div>
-    					<?php endif; ?>
-    				</div>
-
-					<?php
-						endwhile;
-					?>
-				<?php wp_reset_postdata(); ?>
-			<?php endif; ?>
-			<?php wp_reset_query(); ?>
-
-	</div>
 			</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_sidebar(); ?>
