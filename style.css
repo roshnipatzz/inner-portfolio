@@ -457,32 +457,6 @@ table {
 	padding: 0.313em;
 }
 
-/*Grid Layout */
-#grid-container {
-	background: rgba(68,68,68,0.4);
-	width:100%;
-	text-align: center;
-}
-
-.box {
-	background: rgba(68,68,68,0.8);
-	margin: 0.3125em; /* 5 px / 16px */
-	padding: 0.3125em 0.3125em 0.0625em 0.3125em; /* 5px 5px 1px 5px / 16px */
-	display: inline-block;
-	}
-
-.column1 {
-	float:left;
-	width: 45%;
-	margin: 2.5%; /* 2 px / 16px */
-}
-
-.column2 {
-	float:left;
-	width: 30%;
-	margin: 0.125em; /* 2 px / 16px */
-}
-
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
@@ -502,14 +476,14 @@ table {
 }
 
 .site-title a {
-	font-size: 6em;
+	font-size: 4.5em;
 	text-decoration: none;
 }
 
 .site-description {
 	color: #bd8d1b;
 	font-family: 'Fondamento', cursive;
-	font-size: 2em;
+	font-size: 1.8em;
 	text-align: center;
 }
 /*--------------------------------------------------------------
@@ -1041,25 +1015,62 @@ object {
 /*--------------------------------------------------------------
 Compatibility (Responsive Design)
 --------------------------------------------------------------*/
-/* Main Menu */
+/* Desktops and Mobile Devices */
 @media screen and (max-width:742px){
 	.menu-toggle {
 		background: url("menu.png");
+		border: none;
+		box-shadow: none;
 		display: block;
+		text-shadow: none;
 		width: 40px;
 		height: 40px;
 	}
 	
 	.main-navigation.toggled ul {
+		background-color: rgba(0,0,0,0.3);
 		display: block;
-		position: relative;
+		position: absolute;
 		text-align: left;
 	}
 	.main-navigation li {
 		display: block;
-		float: none;
 		border-bottom: 3px double #6f5e56;
+		float: none;
 	}
 	
+	.main-navigation li {
+		display: block;
+		float: none;
+	}
 	
-.class
+	.main-navigation ul {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 852px){
+	.site-title {
+		font-family: 'Eagle Lake', cursive;
+		line-height:initial;
+		text-align: center;
+	}
+	.site-description {
+		color: #bd8d1b;
+		font-family: 'Fondamento', cursive;
+		font-size: 2em;
+		line-height:initial;
+		text-align: center;
+	}
+}
+
+/* Mobile Phone and Mobile Devices */
+@media screen and (min-device-width:320px) and (max-width: 1382px){
+	#primary,
+	#secondary,
+	#sidebar {
+		float: none;
+		margin: auto;
+		width: 100%;
+	}
+}
