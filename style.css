@@ -455,6 +455,7 @@ table {
 	margin: 1.250em 0em 1.250em 2.8em;
 	max-width: 300px;
 	padding: 0.313em;
+	text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -597,13 +598,13 @@ a {
 }
 
 a:visited {
-	color: #716b4d;
+	color: #323232;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #868673;
+	color: #fff;
 }
 
 a:focus {
@@ -1016,7 +1017,7 @@ object {
 /*--------------------------------------------------------------
 Compatibility (Responsive Design)
 --------------------------------------------------------------*/
-/* Desktops and Mobile Devices */
+/* Menu for Desktops, Laptops and Mobile Devices */
 @media screen and (max-width:742px){
 	.menu-toggle {
 		background: url("menu.png");
@@ -1033,6 +1034,7 @@ Compatibility (Responsive Design)
 		display: block;
 		position: absolute;
 		text-align: left;
+		z-index: 9999;
 	}
 	.main-navigation li {
 		display: block;
@@ -1050,10 +1052,12 @@ Compatibility (Responsive Design)
 	}
 }
 
+/* Mobile Phone and Mobile Devices */
 @media screen and (max-width: 852px){
 	.site-title {
 		font-family: 'Tangerine';
 		font-weight: bold;
+		line-height: 2em;
 		text-align: center;
 	}
 	.site-description {
@@ -1064,13 +1068,31 @@ Compatibility (Responsive Design)
 	}
 }
 
-/* Mobile Phone and Mobile Devices */
-@media screen and (min-device-width:320px) and (max-width: 1382px){
+/* Mobile Phone */
+@media screen and (max-width: 480px){
 	#primary,
 	#secondary,
 	#sidebar {
+		border-radius: 1.563em;
 		float: none;
 		margin: auto;
-		width: 100%;
+		text-align: center;
+		max-width: 90%;
+		
+	}
+}
+
+/* Mobile Devices */
+@media screen and (min-width:481px) and (max-width: 1382px){
+	#primary,
+	#secondary,
+	#sidebar {
+		background-color: #73514e;
+		background-image:none;
+		border-radius: 1.563em;
+		float: none;
+		margin: auto;
+		text-align: center;
+		max-width: 90%;	
 	}
 }

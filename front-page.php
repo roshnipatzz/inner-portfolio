@@ -8,25 +8,48 @@
 
 get_header(); ?>
 
+
+
+
 <div id="primary" class="content-area">
 <main id="main" class="site-main" role="main">
 
 <div class="flexslider">
   <ul class="slides">
     <li data-thumb="slide1-thumb.jpg">
-      <img src="<?php echo get_template_directory_uri() ?>/sm-reader.jpg" />
+      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <?php the_post_thumbnail(); ?>
+    </a>
     </li>
     <li data-thumb="slide2-thumb.jpg">
-      <img src="<?php echo get_template_directory_uri() ?>/old.jpg" />
+      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <?php the_post_thumbnail(); ?>
+    </a>
     </li>
     <li data-thumb="slide3-thumb.jpg">
-      <img src="<?php echo get_template_directory_uri() ?>/owl.jpg" />
+      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <?php the_post_thumbnail(); ?>
+    </a>
     </li>
     <li data-thumb="slide4-thumb.jpg">
-      <img src="<?php echo get_template_directory_uri() ?>slide4.jpg" />
+      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <?php the_post_thumbnail(); ?>
+    </a>
     </li>
      <li data-thumb="slide5-thumb.jpg">
-      <img src="<?php echo get_template_directory_uri() ?>slide5.jpg" />
+      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <?php the_post_thumbnail(); ?>
+    </a>
+    </li>
+    <li data-thumb="slide6-thumb.jpg">
+      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <?php the_post_thumbnail(); ?>
+    </a>
+    </li>
+    <li data-thumb="slide7-thumb.jpg">
+      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <?php the_post_thumbnail(); ?>
+    </a>
     </li>
   </ul>
 </div>
