@@ -114,7 +114,7 @@ function inner_portfolio_scripts() {
 	
 	wp_enqueue_style( 'slider-style', get_template_directory_uri() . '/js/flexslider.css' );
 
-	wp_enqueue_style( 'inner-portfolio-fonts', 'https://fonts.googleapis.com/css?family=Eagle+Lake|Jim+Nightshade|Fondamento|Patrick+Hand+SC|Bad+Script|Aladin'); 
+	wp_enqueue_style( 'inner-portfolio-fonts', 'https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Handlee|Lovers+Quarrel|Ruthie|Tangerine'); 
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

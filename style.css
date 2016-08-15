@@ -120,8 +120,8 @@ h1 {
 	border-top: 0.005em solid #6f5e56;
 	border-bottom: 0.005em solid #6f5e56;
 	color: #46242f;
-	font-family: 'Aladin', cursive;
-	font-size: 4em;
+	font-family: 'Lovers Quarrel';
+	font-size: 5.5em;
 	margin: 0.67em 0;
 }
 
@@ -438,7 +438,7 @@ table {
 	border-top-left-radius: 2em;
 	border-bottom-left-radius: 2em; 
 	color: #ece1cc;
-	font-family: 'Bad Script';
+	font-family: 'Handlee';
 	font-size: 1em;
 	float: left;
 	margin: 1.250em 5.000em 0.625em 3.125em;
@@ -471,19 +471,20 @@ table {
 }
 
 .site-title {
-	font-family: 'Eagle Lake', cursive;
+	font-family: 'Tangerine';
+	font-weight: bold;
 	text-align: center;
 }
 
 .site-title a {
-	font-size: 4.5em;
+	font-size: 5.25em;
 	text-decoration: none;
 }
 
 .site-description {
 	color: #bd8d1b;
-	font-family: 'Fondamento', cursive;
-	font-size: 1.8em;
+	font-family: 'Bilbo Swash Caps';
+	font-size: 2.5em;
 	text-align: center;
 }
 /*--------------------------------------------------------------
@@ -745,8 +746,8 @@ a:active {
 	border-top: 0.05em solid #6f5e56;
 	border-bottom: 0.05em solid #6f5e56;
 	color: #e0c5be;
-	font-family: 'Patrick Hand SC', cursive;
-	font-size: 2.5em;
+	font-family: 'Ruthie';
+	font-size: 3em;
 }
 
 .widget_nav_menu ul {
@@ -1051,15 +1052,14 @@ Compatibility (Responsive Design)
 
 @media screen and (max-width: 852px){
 	.site-title {
-		font-family: 'Eagle Lake', cursive;
-		line-height:initial;
+		font-family: 'Tangerine';
+		font-weight: bold;
 		text-align: center;
 	}
 	.site-description {
 		color: #bd8d1b;
-		font-family: 'Fondamento', cursive;
-		font-size: 2em;
-		line-height:initial;
+		font-family: 'Bilbo Swash Caps';
+		font-size: 1.5em;
 		text-align: center;
 	}
 }
