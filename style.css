@@ -626,6 +626,7 @@ a:active {
 	clear: both;
 	display: block;
 	float: left;
+	margin: 0 auto;
 	padding: 0.2em;
 	position: relative;
 	text-align: center;
@@ -633,22 +634,22 @@ a:active {
 }
 
 .main-navigation ul {
-	display: inline-block;
+	display: inline;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	width: auto;
 }
 
 .main-navigation li {
-	border-right: 0.313em solid #000;
-	padding-right: 2em;
+	display: inline-block;
 	padding-left: 2em;
-	float: left;
-	position: relative;
+	padding-right: 2em;
 }
 
 .main-navigation a {
 	display: block;
+	padding: 0.2em;
 	text-decoration: none;
 }
 
