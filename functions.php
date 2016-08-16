@@ -104,6 +104,8 @@ add_action( 'widgets_init', 'inner_portfolio_widgets_init' );
 function inner_portfolio_scripts() {
 	wp_enqueue_style( 'inner-portfolio-style', get_stylesheet_uri() );
 
+/* Slider Code */
+
 	wp_enqueue_script( 'inner-portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'inner-portfolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -114,6 +116,7 @@ function inner_portfolio_scripts() {
 	
 	wp_enqueue_style( 'slider-style', get_template_directory_uri() . '/js/flexslider.css' );
 
+/* Google Fonts Enqueued */
 	wp_enqueue_style( 'inner-portfolio-fonts', 'https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Handlee|Lovers+Quarrel|Ruthie|Tangerine'); 
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
