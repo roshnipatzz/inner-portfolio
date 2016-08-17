@@ -20,19 +20,26 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
+				get_template_part( 'template-parts/content', 'page' ); ?>
+		
+		<?php content_font_style(); /* this line of code calls the function that changes menu background color in options page*/?> 
+		<?php
 
-				// If comments are open or we have at least one comment, load up the comment template.
+			// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
 				endif;
-
+			
 			endwhile; // End of the loop.
 			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-get_sidebar();
+
+<?php //Option to show/hide Sidebar in pages
+$options = get_option( 'ip_options_settings' );
+							if ($options['ip_checkbox_field'] == 'on'){
+							echo get_sidebar(); }
+
 get_footer();

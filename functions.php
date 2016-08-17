@@ -104,26 +104,87 @@ add_action( 'widgets_init', 'inner_portfolio_widgets_init' );
 function inner_portfolio_scripts() {
 	wp_enqueue_style( 'inner-portfolio-style', get_stylesheet_uri() );
 
-/* Slider Code */
-
 	wp_enqueue_script( 'inner-portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'inner-portfolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	
+	//FlexSlider Code
 	wp_enqueue_script('flexslider', get_template_directory_uri() .'/js/jquery.flexslider-min.js', array('jquery'));
-	
 	wp_enqueue_script('flexslider-init', get_template_directory_uri() . '/js/flexslider-init.js', array( 'jquery'));
-	
+	//FlexSlider Style
 	wp_enqueue_style( 'slider-style', get_template_directory_uri() . '/js/flexslider.css' );
 
-/* Google Fonts Enqueued */
-	wp_enqueue_style( 'inner-portfolio-fonts', 'https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Handlee|Lovers+Quarrel|Ruthie|Tangerine'); 
+	//Enqueued Google Fonts
+	wp_enqueue_style( 'inner-portfolio-fonts', 'https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Allura|Patrick+Hand+SC|Handlee|Lovers+Quarrel|Ruthie|Tangerine'); 
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'inner_portfolio_scripts' );
+
+//Option to change content font style
+function content_font_style() {
+	$options = get_option( 'ip_options_settings' );
+		//default font style, and cursive font style font style 
+		if ($options['ip_radio_field'] == 1){ ?>
+			<style> 
+				.entry-content {
+					font-family: 'Handlee';
+				}
+			</style>
+		<?php
+		}
+		elseif ($options['ip_radio_field'] == 2){ ?>
+			<style> 
+				.entry-content {
+					font-family: 'Allura';
+					font-size: 1.6em;
+				}
+			</style> 
+		<?php 
+		}
+}
+
+
+//Option to change background colour of Main Menu in pages
+					function menu_bg_color () {
+						$options = get_option( 'ip_options_settings' );
+						if ($options['ip_select_field'] == 1) {?>
+						<style> 
+							.menu-top-container {
+								background-color: #000;
+							}
+						</style> 
+						
+					<?php }
+						elseif ($options['ip_select_field'] == 2) {?>
+						<style> 
+							.menu-top-container {
+								background-color: #836b5c;
+							}
+						</style>
+						
+					<?php }
+						elseif ($options['ip_select_field'] == 3) {?>
+						<style>
+							.menu-top-container {
+								background-color: #333300;
+							}
+						</style> 
+						
+					<?php }
+						elseif ($options['ip_select_field'] == 4) {?> 
+						<style>
+							.menu-top-container {
+								background-color: #73514e;
+							}
+							
+						</style>
+					<?php
+				} }
+
+
 
 /**
  * Implement the Custom Header feature.
@@ -149,3 +210,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// Calls the file that controls the theme options
+require get_stylesheet_directory() .'/inc/options.php';
