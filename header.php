@@ -38,6 +38,7 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'inner-portfolio' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		<?php menu_bg_color(); /* this line of code calls the function that changes menu background color in options page*/?> 
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
