@@ -426,13 +426,12 @@ table {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-
 #content {
 	background-repeat; no-repeat;
 	background: url("light.jpg") 50% fixed;
 }
 
-#primary {
+#primary { /* where site content is placed */
 	background: rgba(0,0,0,0.3);
 	border: 0.8em double #6f5e56; 
 	border-top-left-radius: 2em;
@@ -447,7 +446,7 @@ table {
 	width: 90%;
 }
 
-#secondary {
+#secondary { /* the sidebar code */
 	background: url("sm-reader.jpg") 50%;
 	border: 0.8em #6f5e56 double;
 	color: #fff;
@@ -1018,8 +1017,8 @@ object {
 /*--------------------------------------------------------------
 Compatibility (Responsive Design)
 --------------------------------------------------------------*/
-/* Menu for Desktops, Laptops and Mobile Devices */
-@media screen and (max-width:742px){
+/*Responsive Design for Smartphones (Includes Hamburger Menu) */
+@media screen and (max-width: 320px){
 	.menu-toggle {
 		background: url("menu.png");
 		border: none;
@@ -1029,7 +1028,6 @@ Compatibility (Responsive Design)
 		width: 40px;
 		height: 40px;
 	}
-	
 	.main-navigation.toggled ul {
 		background-color: rgba(0,0,0,0.3);
 		display: block;
@@ -1042,34 +1040,68 @@ Compatibility (Responsive Design)
 		border-bottom: 3px double #6f5e56;
 		float: none;
 	}
-	
 	.main-navigation li {
 		display: block;
 		float: none;
 	}
-	
 	.main-navigation ul {
 		display: none;
 	}
+		.site-title {
+			font-size: 0.5em;
+		}
+		.site-description {
+			font-size: 1em;
+		}
+	#colophon {
+		font-size: 0.5em;
+	}
 }
-
-/* Mobile Phone and Mobile Devices */
-@media screen and (max-width: 852px){
-	.site-title {
+/* For Desktops, Laptops and Mobile Devices */
+@media screen and (min-width: 321px) and (max-width:782px){
+	.menu-toggle {
+		background: url("menu.png");
+		border: none;
+		box-shadow: none;
+		display: block;
+		text-shadow: none;
+		width: 40px;
+		height: 40px;
+	}
+	.main-navigation.toggled ul {
+		background-color: rgba(0,0,0,0.3);
+		display: block;
+		position: absolute;
+		text-align: left;
+		z-index: 9999;
+	}
+	.main-navigation li {
+		display: block;
+		border-bottom: 3px double #6f5e56;
+		float: none;
+	}
+	.main-navigation li {
+		display: block;
+		float: none;
+	}
+	.main-navigation ul {
+		display: none;
+	}
+		.site-title {
 		font-family: 'Tangerine';
+		font-size: 2vw; /* tried a new font size as it made header of site more responsive */
 		font-weight: bold;
-		line-height: 2em;
 		text-align: center;
 	}
 	.site-description {
 		color: #bd8d1b;
 		font-family: 'Bilbo Swash Caps';
-		font-size: 1.5em;
+		font-size: 4vw; /* tried a new font size as it made header of site more responsive */
 		text-align: center;
 	}
 }
 
-/* Mobile Phone */
+/* Mobile Phones */
 @media screen and (max-width: 480px){
 	#primary,
 	#secondary,
