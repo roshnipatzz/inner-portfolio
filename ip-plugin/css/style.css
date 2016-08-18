@@ -1,0 +1,18 @@
+.ip_secondary{
+	background-color: rgba(0,0,0,0.5);
+	margin: 0;
+	padding: 0;
+}
+
+
+.ip_secondary li {
+	list-style-type: none; 
+}
+
+.custpost a {
+	display: block;
+  	font-family: 'Allura';
+  	font-size: 1.8em;
+  	text-align: center;
+  	text-decoration: none;
+}
