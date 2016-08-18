@@ -1057,9 +1057,9 @@ Compatibility (Responsive Design)
 		font-size: 0.5em;
 	}
 }
-/* For Desktops, Laptops and Mobile Devices */
+/* For Desktops, Laptops and Mobile Devices (Includes Hamburger Menu */
 @media screen and (min-width: 321px) and (max-width:782px){
-	.menu-toggle {
+	.menu-toggle { 
 		background: url("menu.png");
 		border: none;
 		box-shadow: none;
@@ -1089,14 +1089,16 @@ Compatibility (Responsive Design)
 	}
 		.site-title {
 		font-family: 'Tangerine';
-		font-size: 2vw; /* tried a new font size as it made header of site more responsive */
+		font-size: 0.8em; /* Fallback */
+		font-size: 2.05vw; /* Used viewport to header make of site better responsive */
 		font-weight: bold;
 		text-align: center;
 	}
 	.site-description {
 		color: #bd8d1b;
 		font-family: 'Bilbo Swash Caps';
-		font-size: 4vw; /* tried a new font size as it made header of site more responsive */
+		font-size: 1.32em; /* Fallback */
+		font-size: 4vw; /* Used viewport to make header of site better responsive */
 		text-align: center;
 	}
 }
