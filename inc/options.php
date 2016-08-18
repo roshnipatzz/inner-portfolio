@@ -66,7 +66,7 @@ function ip_settings_init() {
 		'theme_options', 
 		'ip_options_page_section'
 		);
-	//creates options for dropdown
+	//creates colour options for dropdown
 	function ip_select_field_render() { 
 		$options = get_option( 'ip_options_settings' );
 		?>
