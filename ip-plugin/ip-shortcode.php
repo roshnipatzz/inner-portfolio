@@ -34,7 +34,7 @@ function ipsc_plugin_styles(){
  	//returns text used to replace shortcode
  	return '<div class="bio"><div class="title">' . $title . '</div><div class="url-buttons"><div id="urlone" class=".url-link"><a href="' . $facebook . '" class="url-link">Facebook</a></div><div id="urltwo" class=".url-link"><a href="' . $linkedin . '" class="url-link">LinkedIn</a></div><div id="urlthree" class=".url-link"><a href="' . $twitter . '" class="url-link">Twitter</a></div><div id="urlfour" class=".url-link"><a href="' . $instagram . '" class="url-link">Instagram</a></div><div id="urlfive" class=".url-link"><a href="' . $wordpress . '" class="url-link">WordPress</a></div></div>' . '</h2>' . '<p style="padding: ' . $padding . '; color: ' . $textcolor . '; background-color: ' . $backgroundcolor . '; border: ' . $bordercolor . ' ' . $border . ' ' . $bordertype . '">' . $content . '</p></div>';
 }
- 	//allows users to add shortcode to a post or page
+ 	//allows users to call shortcode to a post or page
  	add_shortcode('contactme', 'bio_shortcode');
  	
  	
