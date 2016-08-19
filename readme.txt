@@ -29,18 +29,8 @@ Hi. I'm a starter theme called Inner-Portfolio. I was made to facilitate the liv
 	= Plugin Shortcode =
 
 
-
-
-== Frequently Asked Questions ==
-
 	= Does this theme support any plugins? =
 	Inner-Portfolio includes support for Infinite Scroll in Jetpack.
-	
-	
-== Changelog ==
-
-= 1.0 - May 12 2015 =
-* Initial release
 
 == Credits ==
 
