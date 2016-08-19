@@ -17,7 +17,7 @@ function ipsc_plugin_styles(){
  // Enclosing function for contact me textbox and links
  	function bio_shortcode ($atts, $content = null ) {
  		extract (shortcode_atts ( array(
- 			'title' 			=> 'Contact Information', // default title
+ 			'title' 			=> '',
  			'backgroundcolor' 	=> '',
  			'border' 			=> '0.2em', // default border size
  			'bordercolor' 		=> '',
