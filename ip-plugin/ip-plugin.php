@@ -46,7 +46,7 @@ class IPWidget extends WP_Widget{
 	// Function determines what appears on the site
 	public function widget($args, $instance){
 		// Claims if a title is found, display title, otherwise display the default title
-		$title = apply_filters('widget_title', empty($instance['title']) ? 'My Inner Voice' : $instance['title'], $instance, $this->id_base); //apply_filter protects the code from bad codes
+		$title = apply_filters('widget_title', empty($instance['title']) ? 'Inner Voice' : $instance['title'], $instance, $this->id_base); //apply_filter protects the code from bad codes
 		echo $args['before_widget'];
 		
 		if($title){
