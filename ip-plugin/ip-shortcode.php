@@ -14,27 +14,27 @@ function ipsc_plugin_styles(){
  }
  add_action( 'wp_enqueue_scripts', 'ipsc_plugin_styles' );
  
- // Enclosing function to add contact me text
+ // Enclosing function for contact me textbox and links
  	function bio_shortcode ($atts, $content = null ) {
  		extract (shortcode_atts ( array(
- 			'title' 			=> 'Contact Information',
+ 			'title' 			=> 'Contact Information', // default title
  			'backgroundcolor' 	=> '',
- 			'border' 			=> '0.2em',
+ 			'border' 			=> '0.2em', // default border size
  			'bordercolor' 		=> '',
- 			'bordertype' 		=> 'groove',
- 			'padding' 			=> '10em 5em 10em 5em', /* Padding top, right, bottom, left */
+ 			'bordertype' 		=> 'groove', // default border type
+ 			'padding' 			=> '10em 5em 10em 5em', // top, right, bottom, left 
  			'textcolor' 		=> '',
- 			'facebook'  		=> 'http://www.facebook.com',
-        	'linkedin'  		=> 'http://www.linkedin.com',
-        	'twitter' 			=> 'http://www.twitter.com',
-        	'instagram' 		=> 'http://www.instagram.com',
-        	'wordpress' 		=> 'http://www.wordpress.com',
+ 			'facebook'  		=> 'http://www.facebook.com',  // default link
+        	'linkedin'  		=> 'http://www.linkedin.com',  // default link
+        	'twitter' 			=> 'http://www.twitter.com',   // default link
+        	'instagram' 		=> 'http://www.instagram.com', // default link
+        	'wordpress' 		=> 'http://www.wordpress.com', // default link
  			), $atts));
  	
  	//returns text used to replace shortcode
  	return '<div class="bio"><div class="title">' . $title . '</div><div class="url-buttons"><div id="urlone" class=".url-link"><a href="' . $facebook . '" class="url-link">Facebook</a></div><div id="urltwo" class=".url-link"><a href="' . $linkedin . '" class="url-link">LinkedIn</a></div><div id="urlthree" class=".url-link"><a href="' . $twitter . '" class="url-link">Twitter</a></div><div id="urlfour" class=".url-link"><a href="' . $instagram . '" class="url-link">Instagram</a></div><div id="urlfive" class=".url-link"><a href="' . $wordpress . '" class="url-link">WordPress</a></div></div>' . '</h2>' . '<p style="padding: ' . $padding . '; color: ' . $textcolor . '; background-color: ' . $backgroundcolor . '; border: ' . $bordercolor . ' ' . $border . ' ' . $bordertype . '">' . $content . '</p></div>';
 }
- 	//allows user to add shortcode
+ 	//allows users to add shortcode to a post or page
  	add_shortcode('contactme', 'bio_shortcode');
  	
  	
