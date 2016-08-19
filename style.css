@@ -471,7 +471,6 @@ table {
 }
 
 .site-title {
-	background: rgba(0,0,0,0.3);
 	font-family: 'Tangerine';
 	font-weight: bold;
 	text-align: center;
@@ -598,13 +597,13 @@ a {
 }
 
 a:visited {
-	color: #73514e;
+	color: #eadec9;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #eadec9;
+	color: #73514e;
 }
 
 a:focus {
