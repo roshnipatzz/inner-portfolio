@@ -1,0 +1,80 @@
+/*
+Author: Roshni Patel
+Author URI: http://phoenix.sheridanc.on.ca/~ccit3688
+Description: Inner Portfolio Shortcode Style
+*/
+	
+.bio {
+	border: 0.5em #6f5e56 inherit;
+}
+	
+.title {
+	color: #383838;
+	font-family: 'Allura';
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 2em;
+	text-align:center;
+}
+
+.url-buttons {
+	display:inline-block;
+}
+
+.url-link {
+	background-color: #bd8d1b;
+	border: 0.3em #bd8d1b groove; 
+	border-top-left-radius: 3em;
+	border-bottom-right-radius: 3em;
+	font-family: 'Patrick Hand SC';
+	text-align: center;
+	text-decoration: none;
+	margin: 1em;
+	padding: 1em;
+	
+}
+
+#urlone {
+	line-height: 2em;
+	float: left;
+	}
+	
+#urltwo {
+	line-height: 2em;
+	float: left;
+	}
+
+#urlthree {
+	line-height: 2em;
+	float: left;
+	}
+	
+#urlfour {
+	line-height: 2em;
+	float: left;
+	}
+	
+#urlfive {
+	line-height: 2em;
+	float: left;
+	
+	}
+
+/* For the Social Media Links */
+@media screen and (max-width: 754px) {
+	#urlone,
+	#urltwo,
+	#urlthree,
+	#urlfour,
+	#urlfive {
+	float:none;
+	margin-bottom: 2em;
+	display: block;
+	}
+
+	}
+		
+	
+
+
+
