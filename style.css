@@ -428,7 +428,7 @@ table {
 --------------------------------------------------------------*/
 #content { /* body of page */
 	background-repeat; no-repeat;
-	background: url("light.jpg") 50% fixed;
+	background: url("light.jpg") 50% fixed; /*image retrieved from http://www.pixabay.com*/
 }
 
 #primary { /* where site content is placed */
@@ -447,7 +447,7 @@ table {
 }
 
 #secondary { /* the sidebar code */
-	background: url("sm-reader.jpg") 50%;
+	background: url("sm-reader.jpg") 50%; /*image retrieved from http://www.pixabay.com*/
 	border: 0.8em #6f5e56 double;
 	color: #fff;
 	float: left;
@@ -461,7 +461,7 @@ table {
 ## Header
 --------------------------------------------------------------*/
 #masthead { /* the header of site */
-	background: url("banner.jpg") 50%;
+	background: url("banner.jpg") 50%; /*image retrieved from http://www.pixabay.com*/
 	text-align: center;
 }
 
@@ -491,7 +491,7 @@ table {
 ## Footer
 --------------------------------------------------------------*/
 #colophon { 
-	background: url("banner.jpg") 50%;
+	background: url("banner.jpg") 50%; /*image retrieved from http://www.pixabay.com*/
 	border-top: 0.3em solid #000;
 	font-size: 1em;
 	text-align: center;
