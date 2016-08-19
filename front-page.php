@@ -1,6 +1,7 @@
 <?php
 /** 
  * 
+ * Template Name: Custom Home Page
  * Custom template that displays front page (home page) of website
  *
  * This is the template that displays all pages by default.
