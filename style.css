@@ -45,7 +45,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
-# Compatibility
+# Compatibility (Media Queries)
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -287,7 +287,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 { /* centers all headers and makes header drop below any floated element that precede it */ 
 	clear: both;
 	text-align: center;
 }
@@ -426,7 +426,7 @@ table {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-#content {
+#content { /* body of page */
 	background-repeat; no-repeat;
 	background: url("light.jpg") 50% fixed;
 }
@@ -460,28 +460,28 @@ table {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-#masthead {
+#masthead { /* the header of site */
 	background: url("banner.jpg") 50%;
 	text-align: center;
 }
 
-.site-branding {
+.site-branding { /* contains both title and site description */
 	line-height: 1.2em;
 	padding-top: 3em;
 }
 
-.site-title {
+.site-title { /* title of site */
 	font-family: 'Tangerine';
 	font-weight: bold;
 	text-align: center;
 }
 
-.site-title a {
+.site-title a { /*link that leads to home page on title */
 	font-size: 5.25em;
 	text-decoration: none;
 }
 
-.site-description {
+.site-description { /* site description */
 	color: #bd8d1b;
 	font-family: 'Bilbo Swash Caps';
 	font-size: 2.5em;
@@ -490,7 +490,7 @@ table {
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
-#colophon {
+#colophon { 
 	background: url("banner.jpg") 50%;
 	border-top: 0.3em solid #000;
 	font-size: 1em;
@@ -592,18 +592,18 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
+a { /* default color of all links */
 	color: #e0c5be;
 }
 
-a:visited {
+a:visited { /* this color will appear once a link has been clicked on */
 	color: #eadec9;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #73514e;
+	color: #73514e; /* this color will appear when hovering over, focusing on or pressing down on link */
 }
 
 a:focus {
@@ -619,7 +619,7 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 
-.menu-top-container {
+.menu-top-container { /* contains main menu */
 	background-color: #000;
 	border: 0.2em solid #000;
 	clear: both;
@@ -632,7 +632,7 @@ a:active {
 	width: 100%;
 }
 
-.main-navigation ul {
+.main-navigation ul { /* control style and position of links */
 	display: inline;
 	list-style: none;
 	margin: 0;
@@ -640,19 +640,19 @@ a:active {
 	width: auto;
 }
 
-.main-navigation li {
+.main-navigation li { /* control position of links */
 	display: inline-block;
 	padding-left: 2em;
 	padding-right: 2em;
 }
 
-.main-navigation a {
+.main-navigation a { /* control link styles */
 	display: block;
 	padding: 0.2em;
 	text-decoration: none;
 }
 
-.main-navigation ul ul {
+.main-navigation ul ul { /* controls position of dropdown in main menu */
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -670,7 +670,7 @@ a:active {
 	width: 200px;
 }
 
-.main-navigation ul ul li {
+.main-navigation ul ul li { /* displays dropdown for main menu */
 	background-color: #000;
 	display: block;
 }
@@ -743,7 +743,7 @@ a:active {
 /*--------------------------------------------------------------
 ## Sidebar
 --------------------------------------------------------------*/
-.widget-title {
+.widget-title { /* sidebar title */
 	background: rgba(0,0,0,0.3);
 	border-top: 0.05em solid #6f5e56;
 	border-bottom: 0.05em solid #6f5e56;
@@ -752,7 +752,7 @@ a:active {
 	font-size: 3em;
 }
 
-.widget_nav_menu ul {
+.widget_nav_menu ul { /* sidebar posts style*/
 	background: rgba(0,0,0,0.3);
 	list-style-type: none;
 	margin: 0;
@@ -1016,7 +1016,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-Compatibility (Responsive Design)
+Compatibility (Media Queries)
 --------------------------------------------------------------*/
 /*Responsive Design for Smartphones (Includes Hamburger Menu) */
 @media screen and (max-width: 320px){
@@ -1058,7 +1058,7 @@ Compatibility (Responsive Design)
 		font-size: 0.5em;
 	}
 }
-/* For Desktops, Laptops and Mobile Devices (Includes Hamburger Menu */
+/* For Desktops, Laptops and Mobile Devices (Includes Hamburger Menu) */
 @media screen and (min-width: 321px) and (max-width:782px){
 	.menu-toggle { 
 		background: url("menu.png");
@@ -1104,7 +1104,7 @@ Compatibility (Responsive Design)
 	}
 }
 
-/* Mobile Phones */
+/* Mobile Phones Only */
 @media screen and (max-width: 480px){
 	#primary,
 	#secondary,

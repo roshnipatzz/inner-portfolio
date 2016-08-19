@@ -25,12 +25,12 @@ get_header(); ?>
 		<?php content_font_style(); /* this line of code calls the function that changes menu background color in options page*/?> 
 		<?php
 
-			// If comments are open or we have at least one comment, load up the comment template.
+			// If comments are open or we have at least one comment, comment template is loaded
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
 				endif;
 			
-			endwhile; // End of the loop.
+			endwhile; // End of the loop
 			?>
 
 		</main><!-- #main -->

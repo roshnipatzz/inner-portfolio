@@ -4,11 +4,11 @@ Author URI: http://phoenix.sheridanc.on.ca/~ccit3688
 Description: Inner Portfolio Shortcode Style
 */
 	
-.bio {
+.bio { /* invisible border around textbox */
 	border: 0.5em #6f5e56 inherit;
 }
 	
-.title {
+.title { /* styles title */
 	color: #383838;
 	font-family: 'Allura';
 	font-size: 3em;
@@ -17,11 +17,11 @@ Description: Inner Portfolio Shortcode Style
 	text-align:center;
 }
 
-.url-buttons {
+.url-buttons { /* class made to contain and display button */
 	display:inline-block;
 }
 
-.url-link {
+.url-link { /* styles the links */
 	background-color: #bd8d1b;
 	border: 0.3em #bd8d1b groove; 
 	border-top-left-radius: 3em;
@@ -31,33 +31,31 @@ Description: Inner Portfolio Shortcode Style
 	text-decoration: none;
 	margin: 1em;
 	padding: 1em;
-	
 }
 
-#urlone {
-	line-height: 2em;
+#urlone { /* div made to contain link 1 */
 	float: left;
+	line-height: 2em;
 	}
 	
-#urltwo {
-	line-height: 2em;
+#urltwo { /* div made to contain link 2 */
 	float: left;
+	line-height: 2em;
 	}
 
-#urlthree {
-	line-height: 2em;
+#urlthree { /* div made to contain link 3 */
 	float: left;
+	line-height: 2em;
 	}
 	
-#urlfour {
-	line-height: 2em;
+#urlfour { /* div made to contain link 4 */
 	float: left;
+	line-height: 2em;
 	}
 	
-#urlfive {
-	line-height: 2em;
+#urlfive { /* div make to contain link 5 */
 	float: left;
-	
+	line-height: 2em;
 	}
 
 /* For the Social Media Links */
@@ -71,8 +69,7 @@ Description: Inner Portfolio Shortcode Style
 	margin-bottom: 2em;
 	display: block;
 	}
-
-	}
+}
 		
 	
 

@@ -1,15 +1,23 @@
-.ip_secondary{
+/*
+Author: Roshni Patel
+Author URI: http://phoenix.sheridanc.on.ca/~ccit3688
+Description: Inner Portfolio Plugin Style
+*/
+
+
+
+.ip_secondary{ /* style for container for custom post field */
 	background-color: rgba(0,0,0,0.5);
 	margin: 0;
 	padding: 0;
 }
 
 
-.ip_secondary li {
+.ip_secondary li { /* style for post titles */
 	list-style-type: none; 
 }
 
-.custpost a {
+.custpost a { /* style for custom post title and posts' position */
 	display: block;
   	font-family: 'Allura';
   	font-size: 1.8em;
