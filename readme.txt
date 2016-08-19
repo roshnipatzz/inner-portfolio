@@ -26,7 +26,7 @@ Hi. I'm a starter theme called Inner-Portfolio. I was made to facilitate the liv
 	2. Go onto your WordPress Dashboard, then click on Appearance, and then click on Plugins
 	3. Find Plugin Name: Inner-Portfolio and click on activate
 	
-	= Plugin Shortcode =
+= Plugin Shortcode =
 
 
 	= Does this theme support any plugins? =
