@@ -471,6 +471,7 @@ table {
 }
 
 .site-title {
+	background: rgba(0,0,0,0.3);
 	font-family: 'Tangerine';
 	font-weight: bold;
 	text-align: center;
@@ -597,13 +598,13 @@ a {
 }
 
 a:visited {
-	color: #323232;
+	color: #73514e;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #fff;
+	color: #eadec9;
 }
 
 a:focus {
@@ -671,7 +672,8 @@ a:active {
 }
 
 .main-navigation ul ul li {
-
+	background-color: #000;
+	display: block;
 }
 
 .main-navigation li:hover > a,
